@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Generator Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 60%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .section-header {
+            background-color: #00bcd4;
+            color: white;
+            padding: 10px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+            border-radius: 3px;
+        }
+
+        .form-group {
+            display: flex;
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            flex: 1;
+            margin-right: 10px;
+            align-self: center;
+            font-weight: bold;
+        }
+
+        .form-group input[type="text"],
+        .form-group input[type="email"],
+        .form-group input[type="tel"],
+        .form-group select {
+            flex: 2;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .form-group-half {
+            display: inline-block;
+            width: 48%;
+            margin-right: 2%;
+        }
+
+        .form-group-half:last-child {
+            margin-right: 0;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CV Generator Form</h1>
+        
+        <div class="section-header">Personal Details</div>
+        <div class="form-group form-group-half">
+            <label for="first-name">First Name:</label>
+            <input type="text" id="first-name" name="first-name">
+        </div>
+        <div class="form-group form-group-half">
+            <label for="last-name">Last Name:</label>
+            <input type="text" id="last-name" name="last-name">
+        </div>
+        <div class="form-group form-group-half">
+            <label for="father-name">Father's Name:</label>
+            <input type="text" id="father-name" name="father-name">
+        </div>
+        <div class="form-group form-group-half">
+            <label for="mother-name">Mother's Name:</label>
+            <input type="text" id="mother-name" name="mother-name">
+        </div>
+        <div class="form-group form-group-half">
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender">
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </div>
+        <div class="form-group form-group-half">
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+        <div class="form-group form-group-half">
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address">
+        </div>
+
+        <div class="section-header">Education</div>
+        <div class="form-group form-group-half">
+            <label for="degree1">Degree:</label>
+            <input type="text" id="degree1" name="degree1">
+        </div>
+        <div class="form-group form-group-half">
+            <label for="institution1">Institution:</label>
+            <input type="text" id="institution1" name="institution1">
+        </div>
+        <div class="form-group form-group-half">
+            <label for="gpa1">GPA:</label>
+            <input type="text" id="gpa1" name="gpa1">
+        </div>
+
+        <div class="form-group form-group-half">
+            <label for="degree2">Degree:</label>
+            <input type="text" id="degree2" name="degree2">
+        </div>
+        <div class="form-group form-group-half">
+            <label for="institution2">Institution:</label>
+            <input type="text" id="institution2" name="institution2">
+        </div>
+        <div class="form-group form-group-half">
+            <label for="gpa2">GPA:</label>
+            <input type="text" id="gpa2" name="gpa2">
+        </div>
+
+        <div class="form-group form-group-half">
+            <label for="degree3">Degree:</label>
+            <input type="text" id="degree3" name="degree3">
+        </div>
+        <div class="form-group form-group-half">
+            <label for="institution3">Institution:</label>
+            <input type="text" id="institution3" name="institution3">
+        </div>
+        <div class="form-group form-group-half">
+            <label for="gpa3">GPA:</label>
+            <input type="text" id="gpa3" name="gpa3">
+        </div>
+
+        <div class="section-header">References</div>
+        <div class="form-group form-group-half">
+            <label for="ref-name1">Name:</label>
+            <input type="text" id="ref-name1" name="ref-name1">
+        </div>
+        <div class="form-group form-group-half">
+            <label for="ref-position1">Position:</label>
+            <input type="text" id="ref-position1" name="ref-position1">
+        </div>
+        <div class="form-group form-group-half">
+            <label for="ref-company1">Company:</label>
+            <input type="text" id="ref-company1" name="ref-company1">
+        </div>
+        <div class="form-group form-group-half">
+            <label for="ref-email1">Email:</label>
+            <input type="email" id="ref-email1" name="ref-email1">
+        </div>
+        <div class="form-group form-group-half">
+            <label for="ref-phone1">Phone:</label>
+            <input type="tel" id="ref-phone1" name="ref-phone1">
+        </div>
+
+        <div class="form-group form-group-half">
+            <label for="ref-name2">Name:</label>
+            <input type="text" id="ref-name2" name="ref-name2">
+        </div>
+        <div class="form-group form-group-half">
+            <label for="ref-position2">Position:</label>
+            <input type="text" id="ref-position2" name="ref-position2">
+        </div>
+        <div class="form-group form-group-half">
+            <label for="ref-company2">Company:</label>
+            <input type="text" id="ref-company2" name="ref-company2">
+        </div>
+        <div class="form-group form-group-half">
+            <label for="ref-email2">Email:</label>
+            <input type="email" id="ref-email2" name="ref-email2">
+        </div>
+        <div class="form-group form-group-half">
+            <label for="ref-phone2">Phone:</label>
+            <input type="tel" id="ref-phone2" name="ref-phone2">
+        </div>
+
+        <button type="submit">Generate CV</button>
+    </div>
+</body>
+</html>
